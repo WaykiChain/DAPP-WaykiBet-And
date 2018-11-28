@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WaykiChain</string>
+    <string name="loading_data">Loading data...</string>
+    <string name="network_error">Network Error</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="pls_check_net">Check the network</string>
+    <string name="wicc_wkd_record"><u>Exchange History</u></string>
+    <string name="wicc">WICC</string>
+    <string name="wusd">WUSD</string>
+    <string name="wallet">Wallet</string>
+    <string name="home">Home</string>
+    <string name="jingcai">Bet</string>
+    <string name="mine">Mine</string>
+
+    <string name="getwicc">Get WICC</string>
+    <string name="rate">Rate:</string>
+    <string name="consumption">Consumption</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="exchange">Exchange</string>
+    <string name="exchange_records"><u>Exchange Histroy</u></string>
+    <string name="balance">Balance</string>
+    <string name="lock_position">Lock Position</string>
+
+    <!--qr code-->
+    <string name="qrcode">Scan QR code</string>
+    <string name="receivables_code">Receivables code</string>
+
+    <!--二维码-->
+    <string name="copy_address">Copy address</string>
+
+    <!--管理钱包-->
+    <string name="management_wallet">Management Wallet</string>
+    <string name="backup_wallet">Backup Wallet</string>
+    <string name="export_private_key">Export Private Key</string>
+    <string name="import_wallet">Import Wallet</string>
+    <string name="create_wallet">Create Wallet</string>
+    <string name="change_password">Change Password</string>
+    <string name="warning">&#160;Warning</string>
+    <string name="warning_tip">private key no encryption, a great risk of leakage, please keep in a safe location</string>
+    <string name="input_pwd">Please enter your password</string>
+    <string name="words_help">Mnemonic is used to restore the wallet or reset the wallet password, please copy it accurately on paper and store it in a safe place</string>
+    <string name="wallet_pwd">Wallet password</string>
+    <string name="pls_input_zjc">Enter your wallet Mnemonic, separated by a space</string>
+   <string name="remarks"> Remarks (optional)</string>
+    <string name="pwd_tip">Password protection private key and transaction authorization code</string>
+    <string name="waykichain_tip">WaykiChain doesn\'t store your wallet password, and it won\'t help you get it back. Please remember!</string>
+    <string name="i_reade">&#160;I have read and agreed</string>
+    <string name="service_private">Service and Privacy Policy</string>
+    <string name="transfer_amount">Transfer Amount</string>
+    <string name="pls_old_pwd">Old Password</string>
+    <string name="pls_new_pwd">New Password</string>
+    <string name="pls_new_pwd2">New password again</string>
+    <string name="input_password">Enter your wallet password</string>
+    <string name="wallet_tip">Mnemonic is used to restore the wallet or reset the wallet password, please copy it accurately on paper and store it in a safe place</string>
+    <string name="alreday_copy">Backup completed</string>
+    <string name="wallet_pwd_1">Enter wallet password</string>
+    <string name="wallet_pwd_2">Enter wallet password again</string>
+
+    <!--创建钱包-->
+    <string name="pwd_empty">Password can not be empty</string>
+    <string name="pwd_match">Passwords do not match</string>
+    <string name="pwd_length">Password length 8-16 digits</string>
+    <string name="create_success">Created successfully</string>
+    <string name="create_fail">Creation failed</string>
+    <string name="wallet_creating">Wallet creating</string>
+    <string name="services_agree">Please agree to the Terms of Service</string>
+    <string name="invalid_mnemonic">Invalid mnemonic</string>
+    <string name="importing">Importing</string>
+    <string name="import_success">Import success</string>
+    <string name="export_fail">Export failed</string>
+    <string name="create_tip">Create a wallet will replace your current wallet, make sure your wallet is ready Mnemonic backup</string>
+    <string name="import_tip">After importing replace your wallet now, make sure your wallet is ready Mnemonic backup</string>
+    <string name="old_pwd_error">Old password error</string>
+    <string name="pwd_change_success">Password reset complete</string>
+    <string name="no_wallet_tip">You haven\'t created or import wallet, you can\'t make bets, etc.</string>
+
+    <!--兑换-->
+    <string name="exchange_rate">Exchange Rate:&#160;</string>
+    <string name="exchange_time">Exchange Time:&#160;</string>
+    <string name="waiting_confirmation">Waiting for Confirmation</string>
+    <string name="exchange_failure">Exchange failure</string>
+    <string name="exchange_success">Exchange Success</string>
+    <string name="exchangeing">Processing</string>
+    <string name="service_call">Service Call：</string>
+    <string name="you_will_pay">Pay</string>
+    <string name="recharge">Recharge</string>
+    <string name="qrcode_input">Put the QR code into the box scan it automatically.</string>
+
+    <!--转账-->
+    <string name="wicc_transfer">WICC Transfer</string>
+    <string name="my_balance">Balance:&#160;</string>
+    <string name="rece_address">Payment address</string>
+    <string name="fast">Fast</string>
+    <string name="slow">Slow</string>
+    <string name="confitrm_transfer">Confirm Transfer</string>
+    <string name="pwd_error">Password Error</string>
+
+    <!--交易历史-->
+    <string name="recent_transactions">Recent transactions</string>
+    <string name="all">All</string>
+    <string name="transfer">Transfer</string>
+    <string name="activation">Activation</string>
+    <string name="receipt">Receipt</string>
+    <string name="fkf">sender</string>
+    <string name="skf">Payee</string>
+    <string name="kgfy">Fee</string>
+    <string name="jyhx">Transaction hash</string>
+    <string name="bz">Remarks</string>
+    <string name="jylx">Transaction Type</string>
+    <string name="jysj">Trading time</string>
+    <string name="jysb">Transaction failed</string>
+    <string name="jycg">Trading Success</string>
+    <string name="save_faile">Save failed</string>
+    <string name="save_success">Saved successfully</string>
+
+    <!--转账-->
+    <string name="address_valid">Please enter a valid address</string>
+    <string name="amount_valid">Please enter a valid amount</string>
+    <string name="transfer_success">Transfer success</string>
+    <string name="open_camer">Failed to open the camera, please turn on camera permissions</string>
+    <string name="amount_not_enough">Insufficient amount</string>
+    <string name="activation_successful">Activation, waiting for confirmation</string>
+    <string name="pls_import_create">Please import or create a wallet</string>
+    <string name="download">Download</string>
+    <string name="found_new_version">Found a new version, is it updated?</string>
+    <string name="betted">Betting</string>
+    <string name="kaizhuang">Build a bet</string>
+    <string name="notice_backup">Mnemonics are very important, don\'t lose or divulge, if someone gets your mnemonic, you will lose your assets </string>
+    <string name="start_backup">Start backup</string>
+    <string name="write_words">Please copy the wallet mnemonic</string>
+    <string name="esp_tip">special reminder</string>
+    <string name="makesure_words">Confirm mnemonic</string>
+    <string name="click_words">Please click on the mnemonic in order,Confirm you have backed up</string>
+    <string name="backup_words">Export mnemonic</string>
+    <string name="backup_success">Backup success</string>
+    <string name="backup_failer">Backup failed</string>
+
+    <!--tip-->
+    <string name="exit_tip">Exit the App?</string>
+    <string name="invalid_token">You are offline!</string>
+    <string name="import_exit">Import your old wallet</string>
+    <string name="network_error_refresh">Network error! Please click to refresh ~</string>
+    <string name="change_rate">Revise exchange rate</string>
+    <string name="system_reward">System reward</string>
+    <string name="jump_over">jump over</string>
+    <string name="no_data">No data</string>
+    <string name="acti_tip">Need to consume 0.0001 WICC activation, use the wallet WICC after activating the wallet</string>
+    <string name="reward_tip">The system will give 100WTEST as a reward. please check it after 60 seconds.</string>
+    <string name="aleady_copied">Copied to the clipboard</string>
+    <string name="easy_kz">Convenient build a bet, everyone can create</string>
+    <string name="more_rate">More Handicap, the higher the odds</string>
+    <string name="data_in_blockchain">All data is on the chain, open and transparent</string>
+    <string name="enter">Enter</string>
+    <string name="wait_acti">Waiting for activation</string>
+</resources>
+

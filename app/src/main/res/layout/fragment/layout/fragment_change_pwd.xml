@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pll_bg"
+    android:background="@drawable/bg_wallet"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="100%"
+        />
+
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/iet_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/pls_old_pwd"
+        android:inputType="textPassword"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:gravity="left|bottom"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/iet_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/pls_new_pwd"
+        android:inputType="textPassword"
+        android:gravity="left|bottom"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/iet_input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/pls_new_pwd2"
+        android:inputType="textPassword"
+        android:gravity="left|bottom"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="4%"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:textStyle="bold"
+        android:text="@string/confirm"
+        android:textColor="@drawable/textcolor_bg"
+        app:layout_textSizePercent="2.5%"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg_common"
+        />
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

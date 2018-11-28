@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_wallet_main"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="23%"
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:id="@+id/tv_wallet_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/drawable_right_conner"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/getwicc"
+                android:textColor="@color/textcolor_white"
+                app:layout_heightPercent="20%"
+                app:layout_marginTopPercent="10%"
+                app:layout_textSizePercent="8%"
+                app:layout_widthPercent="20%" />
+
+            <ImageView
+                android:id="@+id/iv_wallet_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/iv_main_detail"
+                app:layout_heightPercent="25%"
+                app:layout_marginRightPercent="3%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="10%" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_wallet_detail"
+                android:gravity="center"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                app:layout_marginTopPercent="3%"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textcolor_white"
+                app:layout_heightPercent="23%"
+                app:layout_textSizePercent="10%"
+                app:layout_widthPercent="50%" />
+
+            <TextView
+                android:id="@+id/tv_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_address"
+                android:layout_below="@id/iv_wallet_detail"
+                android:gravity="center"
+                android:clickable="true"
+                app:layout_marginTopPercent="3%"
+                android:visibility="invisible"
+                android:textColor="@color/textcolor_blue3"
+                app:layout_heightPercent="23%"
+                app:layout_textSizePercent="10%"
+                app:layout_widthPercent="10%"
+                />
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:src="@drawable/iv_scan"
+                app:layout_heightPercent="18%"
+                app:layout_marginLeftPercent="9.5%"
+                app:layout_marginTopPercent="15%"
+                app:layout_widthPercent="27%" />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:layout_toRightOf="@+id/iv_scan"
+                android:src="@drawable/iv_qrcode"
+                app:layout_heightPercent="18%"
+                app:layout_marginTopPercent="15%"
+                app:layout_widthPercent="27%" />
+
+            <ImageView
+                android:id="@+id/iv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:layout_toRightOf="@id/iv_qrcode"
+                android:clickable="true"
+                android:src="@drawable/iv_copy"
+                app:layout_heightPercent="18%"
+                app:layout_marginTopPercent="15%"
+                app:layout_widthPercent="27%" />
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            app:layout_marginTopPercent="2%"
+            app:layout_heightPercent="6%"
+            app:layout_widthPercent="90%">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:text="@string/rate"
+                android:textColor="@color/textcolor_blue"
+                app:layout_textSizePercent="35%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:textColor="@color/textcolor_white"
+                app:layout_textSizePercent="35%" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        <include
+            layout="@layout/layout_wallet_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="90%" />
+
+        <include
+            layout="@layout/layout_wallet_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="90%" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

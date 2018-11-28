@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="70%"
+        android:layout_centerVertical="true"
+        app:layout_marginLeftPercent="5%"
+        app:layout_widthPercent="8%" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_icon"
+        android:gravity="center"
+        app:layout_heightPercent="100%"
+        app:layout_marginLeftPercent="2%"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_textSizePercent="18%"
+        app:layout_widthPercent="16%" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="40%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="10%"
+        android:gravity="center|right"
+        android:layout_alignParentRight="true"
+        app:layout_widthPercent="46%"
+        app:layout_textSizePercent="20%"
+        android:text="0"
+        android:textColor="@color/textcolor_green"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_below="@id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="40%"
+        app:layout_marginRightPercent="5%"
+        android:gravity="center|right"
+        android:layout_alignParentRight="true"
+        app:layout_widthPercent="46%"
+        app:layout_textSizePercent="16%"
+        android:textColor="@color/textcolor_little_blue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="90%"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:height="0.5dp"
+        android:background="@color/white_blue"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

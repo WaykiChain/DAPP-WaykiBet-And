@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_common_bg"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_heightPercent="22%"
+        app:layout_widthPercent="90%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor_blue2"
+            app:layout_textSizePercent="27%"
+            android:text="@string/export_private_key"
+            />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fee"
+        android:layout_below="@id/pll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_textSizePercent="6%"
+        android:gravity="center|left"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="90%"
+        android:textColor="@color/textcolor_blue3"
+        android:drawableLeft="@drawable/warning"
+        android:text="@string/warning"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_slow"
+        android:layout_below="@id/tv_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="@string/warning_tip"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="90%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_textSizePercent="5%"
+        />
+
+    <TextView
+        android:id="@+id/tv_words"
+        android:background="@drawable/tv_conner_bg"
+        android:layout_below="@id/tv_slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="90%"
+        app:layout_paddingPercent="2%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_paddingLeftPercent="2%"
+        app:layout_textSizePercent="6%"
+        android:textStyle="bold"
+        android:textColor="@color/textcolor_black"
+        />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_below="@id/tv_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="18%"
+        app:layout_widthPercent="40%"
+        app:layout_marginBottomPercent="2%"
+        app:layout_textSizePercent="5%"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="6%"
+        android:text="@string/cancel"
+        android:background="@drawable/btn_gray_common"
+        app:layout_marginLeftPercent="5%"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@id/tv_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="5%"
+        android:layout_alignParentRight="true"
+        app:layout_marginTopPercent="6%"
+        app:layout_heightPercent="18%"
+        app:layout_widthPercent="40%"
+        app:layout_marginBottomPercent="2%"
+        android:background="@drawable/btn_bg_common"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_textSizePercent="5%"
+        android:text="@string/confirm"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

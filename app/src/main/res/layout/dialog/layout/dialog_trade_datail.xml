@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="7%"
+        app:layout_heightPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="3%"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dialog_close"
+        />
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pll_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/trade_detail_bg"
+        android:orientation="vertical"
+        app:layout_heightPercent="80%"
+        app:layout_widthPercent="100%">
+
+
+        <TextView
+            android:id="@+id/tv_trade_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|bottom"
+            android:textColor="@color/textcolor_black3"
+            android:textStyle="bold"
+            app:layout_heightPercent="7%"
+            app:layout_marginTopPercent="10%"
+            app:layout_textSizePercent="5%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:id="@+id/tv_trade_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:textColor="@color/textcolor_gray1"
+            app:layout_heightPercent="3%"
+            app:layout_marginTopPercent="1%"
+            app:layout_textSizePercent="2.5%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trade_status"
+            android:gravity="center|left"
+            android:text="@string/fkf"
+            android:textColor="@color/textcolor_black2"
+            android:textStyle="bold"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="3%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:id="@+id/tv_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left|top"
+            android:textColor="@color/textcolor_gray1"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="1%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trade_status"
+            android:gravity="center|left"
+            android:text="@string/skf"
+            android:textColor="@color/textcolor_black2"
+            android:textStyle="bold"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="3%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:id="@+id/tv_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left|top"
+            android:textColor="@color/textcolor_gray1"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="1%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trade_status"
+            android:gravity="center|left"
+            android:text="@string/kgfy"
+            android:textColor="@color/textcolor_black2"
+            android:textStyle="bold"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="3%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:id="@+id/tv_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left|top"
+            android:textColor="@color/textcolor_gray1"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="1%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trade_status"
+            android:gravity="center|left"
+            android:text="@string/jyhx"
+            android:textColor="@color/textcolor_black2"
+            android:textStyle="bold"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="3%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:id="@+id/tv_hash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left|top"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_gray1"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="1%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trade_status"
+            android:gravity="center|left"
+            android:text="@string/remarks"
+            android:textColor="@color/textcolor_black2"
+            android:textStyle="bold"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="3%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left|top"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_gray1"
+            app:layout_heightPercent="4%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="1%"
+            app:layout_textSizePercent="3%"
+            app:layout_widthPercent="90%" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            app:layout_heightPercent="10%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="90%">
+
+            <TextView
+                android:id="@+id/tv_trade_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_trade_status"
+                android:gravity="center|left"
+                android:text="@string/jylx"
+                android:textColor="@color/textcolor_black2"
+                android:textStyle="bold"
+                app:layout_heightPercent="50%"
+                app:layout_marginTopPercent="3%"
+                app:layout_textSizePercent="30%"
+                app:layout_widthPercent="50%" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_trade_type"
+                android:gravity="center|left|top"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_gray1"
+                app:layout_heightPercent="50%"
+                app:layout_marginTopPercent="1%"
+                app:layout_textSizePercent="30%"
+                app:layout_widthPercent="50%" />
+
+            <TextView
+                android:id="@+id/tv_trade_time_1"
+                android:layout_toRightOf="@id/tv_trade_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_trade_status"
+                android:gravity="center|left"
+                android:text="@string/jysj"
+                android:textColor="@color/textcolor_black2"
+                android:textStyle="bold"
+                app:layout_heightPercent="50%"
+                app:layout_marginTopPercent="3%"
+                app:layout_textSizePercent="30%"
+                app:layout_widthPercent="50%" />
+
+            <TextView
+                android:id="@+id/tv_trade_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_type"
+                android:layout_below="@id/tv_trade_time_1"
+                android:gravity="center|left|top"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_gray1"
+                app:layout_heightPercent="50%"
+                app:layout_marginTopPercent="1%"
+                app:layout_textSizePercent="30%"
+                app:layout_widthPercent="50%" />
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_trade_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trade_success"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="6%"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

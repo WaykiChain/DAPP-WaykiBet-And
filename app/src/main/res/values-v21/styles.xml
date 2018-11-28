@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="WebAppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimary</item>
+    </style>
+
+    <style name="WebAppTheme2" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="DialogFullscreen" parent="@android:style/Theme.Material.Light.DialogWhenLarge" tools:targetApi="lollipop">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:colorPrimary">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowAnimationStyle" tools:ignore="DuplicateDefinition">@style/dialog_animation</item>
+    </style>
+
+
+    <style name="dialog_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_open</item>
+        <item name="android:windowExitAnimation">@anim/dialog_close</item>
+    </style>
+
+
+</resources>

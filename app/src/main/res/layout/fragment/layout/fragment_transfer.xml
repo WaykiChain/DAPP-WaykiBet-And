@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="100%"
+        />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:gravity="center|left"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_blue_white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/my_balance"
+            android:gravity="center"
+            app:layout_marginLeftPercent="5%"
+            android:textColor="@color/textcolor_little_blue"
+            app:layout_textSizePercent="30%"
+            />
+
+        <TextView
+            android:id="@+id/tv_amuont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 0WICC"
+            android:gravity="center"
+            app:layout_marginLeftPercent="1%"
+            android:textColor="@color/textcolor_white_blue"
+            app:layout_textSizePercent="32%"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/rece_address"
+        android:gravity="left|bottom"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:drawableRight="@drawable/iv_scan"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/tv_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/transfer_amount"
+        android:gravity="left|bottom"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/tv_remarkes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/remarks"
+        android:gravity="left|bottom"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+    <TextView
+        android:id="@+id/tv_fee"
+        android:layout_below="@id/pll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="7%"
+        app:layout_textSizePercent="2%"
+        android:gravity="center|left"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="88%"
+        app:layout_marginTopPercent="3%"
+        android:textColor="@color/textcolor_white_blue"
+        android:text="@string/kgfy"
+        />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/sb_fee"
+        android:layout_below="@id/tv_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:progressTint="@color/textcolor_blue3"
+        android:thumbTint="@color/textcolor_blue3"
+        android:progressBackgroundTint="@color/textcolor_little_blue"
+        />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/slow"
+            android:textColor="@color/textcolor_little_blue"
+            app:layout_heightPercent="100%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_textSizePercent="45%"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginRightPercent="3%"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="100%"
+            android:textColor="@color/textcolor_little_blue"
+            android:text="@string/fast"
+            app:layout_textSizePercent="45%"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="5%"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:textStyle="bold"
+        android:text="@string/confitrm_transfer"
+        android:textColor="@drawable/textcolor_bg"
+        app:layout_textSizePercent="2.5%"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg_common"
+        />
+
+      
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

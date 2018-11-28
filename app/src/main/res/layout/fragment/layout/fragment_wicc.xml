@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_rv_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_widthPercent="100%" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/pll_history_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="90%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/btn_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_common_white"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="46%"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="100%"
+                android:text="@string/receipt"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_textSizePercent="35%"
+                android:textColor="@color/textcolor_blue3"
+                android:textAllCaps="false"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2%"
+                app:layout_heightPercent="45%"
+                app:layout_widthPercent="16%"
+                android:src="@drawable/qr_collection"
+                />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/btn_send"
+            android:layout_toRightOf="@id/btn_qrcode"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:background="@drawable/btn_bg_common"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="8%"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="46%"
+            android:textAllCaps="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="100%"
+                android:text="@string/transfer"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_textSizePercent="35%"
+                android:textColor="@drawable/textcolor_bg"
+                android:textAllCaps="false"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="45%"
+                app:layout_widthPercent="16%"
+                android:src="@drawable/transfer"
+                app:layout_marginLeftPercent="2%"
+                />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

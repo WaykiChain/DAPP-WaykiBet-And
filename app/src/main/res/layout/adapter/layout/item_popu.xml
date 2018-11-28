@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_popu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="7dp"
+    android:clickable="true"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/item_bg"
+    android:textColor="@color/textcolor_blue4"
+    />

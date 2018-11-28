@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pll_bg"
+    android:background="@drawable/bg_wallet"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="100%"
+        />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/pll_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="90%"
+        android:gravity="center|left"
+        android:layout_gravity="center_horizontal"
+        android:background="#55000000"
+        >
+        <!--  android:background="#55000000"-->
+
+        <ImageView
+            android:id="@+id/iv_important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginTopPercent="18%"
+            android:src="@drawable/warning_white"
+            />
+
+        <TextView
+            android:id="@+id/tv_tip1"
+            app:layout_marginTopPercent="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_important"
+            android:text="@string/pwd_tip"
+            android:gravity="center|left"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginRightPercent="7%"
+            android:textColor="@color/textcolor_white_blue"
+            app:layout_textSizePercent="13%"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="70%"
+            app:layout_marginTopPercent="5%"
+            app:layout_widthPercent="90%"
+            android:text="@string/waykichain_tip"
+            android:gravity="center|top|left"
+            android:lineSpacingExtra="5dp"
+            android:layout_toRightOf="@id/iv_important"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginRightPercent="7%"
+            android:textColor="@color/textcolor_little_blue"
+            app:layout_textSizePercent="12%"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <EditText
+        android:id="@+id/pll_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="90%"
+        android:visibility="gone"
+        android:gravity="top|left"
+        app:layout_paddingPercent="2%"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:textColor="@color/textcolor_white_blue"
+        android:hint="@string/pls_input_zjc"
+        app:layout_textSizePercent="2.5%"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_black_conner"/>
+
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/et_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/wallet_pwd_1"
+        android:gravity="left|bottom"
+        android:inputType="textPassword"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+    <com.wayki.wallet.ui.ImageEditText
+        android:id="@+id/et_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:hint="@string/wallet_pwd_2"
+        android:gravity="left|bottom"
+        android:inputType="textPassword"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_paddingBottomPercent="5%"
+        app:layout_textSizePercent="2.2%"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="90%"
+        android:layout_gravity="center"
+        android:background="@color/textcolor_little_blue"
+        />
+
+
+    <include
+        layout="@layout/layout_services"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="90%"
+        app:layout_heightPercent="6%"
+        android:layout_gravity="center"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="4%"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/create_wallet"
+        android:textAllCaps="false"
+        android:textColor="@drawable/textcolor_bg"
+        app:layout_textSizePercent="2.5%"
+        android:background="@drawable/btn_bg_common"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:layout_textSizePercent="2.3%"
+        app:layout_marginTopPercent="1.5%"
+        android:textColor="@drawable/textcolor_bg"
+        android:text="@string/import_wallet"
+        />
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

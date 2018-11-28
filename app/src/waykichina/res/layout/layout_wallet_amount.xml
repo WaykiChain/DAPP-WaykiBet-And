@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pll_wicc_record"
+        android:background="@drawable/bg_press_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="@string/wicc"
+            android:textColor="@color/textcolor_white"
+            android:textStyle="bold"
+            app:layout_textSizePercent="28%"
+            />
+
+        <!-- android:text="≈0.0(CNY)"-->
+        <TextView
+            android:id="@+id/tv_cny_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/textcolor_blue"
+            app:layout_textSizePercent="20%"
+            app:layout_marginLeftPercent="2%"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_wicc_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/iv_pull_right"
+            android:gravity="center|right"
+            android:text="0 "
+            android:textColor="@color/textcolor_white_blue"
+            android:textStyle="bold"
+            app:layout_textSizePercent="25%" />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_blue" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pll_wusd_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/bg_press_common"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="@string/wusd"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_textSizePercent="28%"
+           />
+
+        <TextView
+            android:id="@+id/tv_token_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="@color/textcolor_blue"
+            app:layout_textSizePercent="20%"
+            />
+
+        <TextView
+            android:id="@+id/tv_wusd_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/iv_pull_right"
+            android:gravity="center|right"
+            android:text="0  "
+            android:textColor="@color/textcolor_white_blue"
+            android:textStyle="bold"
+            app:layout_textSizePercent="25%" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

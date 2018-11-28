@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/acb_service"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/textcolor_white_blue"
+        android:text="@string/i_reade"
+        android:button="@drawable/cb_checked_bg"
+        app:layout_textSizePercent="35%"
+        />
+
+    <TextView
+        android:layout_toRightOf="@id/acb_service"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:layout_marginLeftPercent="2%"
+        android:text="@string/service_private"
+        android:textColor="@color/white"
+        app:layout_textSizePercent="35%"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

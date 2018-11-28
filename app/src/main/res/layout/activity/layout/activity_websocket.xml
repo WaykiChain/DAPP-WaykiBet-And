@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/tv_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接websocket" />
+
+    <Button
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送信息" />
+
+    <Button
+        android:id="@+id/tv_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="断开连接" />
+
+    <TextView
+        android:id="@+id/tv_contant"
+        android:layout_width="match_parent"
+        android:layout_height="438dp" />
+
+</LinearLayout>

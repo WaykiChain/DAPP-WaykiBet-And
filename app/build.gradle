@@ -1,34 +1,123 @@
 apply plugin: 'com.android.application'
 
+def API_RELEASE_HOST = "\"https://m.mydomain.com/api/\""
+def API_DEV_HOST = "\"https://m.mydomain_dev.com/api/\""
+
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "org.waykichain.testwicc"
+        applicationId "com.wayki.wallet.waykimain"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        flavorDimensions "versionCode"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
-    buildTypes {
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    aaptOptions {
+        noCompress "txt"
+    }
+
+    signingConfigs {
         release {
+            storeFile file("wicc_test.jks")
+            storePassword "waykichain2018"
+            keyAlias "key0"
+            keyPassword "waykichain2018"
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "API_HOST", "${API_DEV_HOST}"
             minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            buildConfigField "String", "API_HOST", "${API_RELEASE_HOST}"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
     sourceSets {
         main {
-            jniLibs.srcDirs = ['libs']
+            jniLibs.srcDirs = ['libs', 'src/main/jniLibs']
+            java.srcDirs = ['src/main/java']
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/activity',
+                            'src/main/res/layout/fragment',
+                            'src/main/res/layout/popu',
+                            'src/main/res/layout/dialog',
+                            'src/main/res/layout/adapter',
+                            'src/main/res/layout/others',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
         }
     }
+
+
+    /*配置渠道*/
+    productFlavors {
+        waykichina {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "official"]
+            applicationId "com.wayki.wallet.waykichina"
+            versionName "2.5.2"
+        }
+    }
+
+    //指定打包后应用名称
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            def fileName
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                if (variant.buildType.name.equals('release')) {
+                    fileName = "WICC_${variant.versionName}_${variant.productFlavors[0].name}_release.apk"
+                } else if (variant.buildType.name.equals('debug')) {
+                    fileName = "WICC_${variant.versionName}_${variant.productFlavors[0].name}_debug.apk"
+                }
+                outputFileName = fileName
+            }
+        }
+    }
+
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.zhy:percent-support-extends:1.1.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.orhanobut:logger:2.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.hannesdorfmann.mosby:mvp:2.0.1'
+    implementation 'com.hannesdorfmann.mosby:viewstate:2.0.1'
+    implementation project(':okrx2')
+    implementation 'com.dhh:rxlifecycle2:1.6'
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+    implementation project(':zbarlibary')
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
 }

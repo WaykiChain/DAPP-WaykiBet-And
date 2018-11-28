@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/launch_bg">
+
+    <TextView
+        android:id="@+id/tv_isdebug"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor_white"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_launch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_marginTopPercent="11%"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="10%"
+        android:text="@string/easy_kz"
+        android:textColor="@color/textcolor_white"
+        app:layout_textSizePercent="2.5%"
+        />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="6%"
+        app:layout_marginBottomPercent="12%"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/white"
+        android:text="@string/enter"
+        android:background="@drawable/btn_bg_common"
+        app:layout_textSizePercent="2.5%"
+        />
+
+
+</com.zhy.android.percent.support.PercentFrameLayout>

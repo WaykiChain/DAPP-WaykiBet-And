@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.libMinSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName_okrx2
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+//    compile "com.lzy.net:okgo:$versionName_okgo"
+   // implementation project(':okgo')
+    compile  'com.squareup.okhttp3:mockwebserver:3.9.0'
+}
+
+//apply from: 'bintray.gradle'

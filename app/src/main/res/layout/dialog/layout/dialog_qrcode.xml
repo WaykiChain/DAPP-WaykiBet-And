@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pll_bg"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="100%"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="100%"
+        app:layout_textSizePercent="2%"
+        android:textColor="@color/textcolor_white_blue"
+        android:gravity="center"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_adderss_qrcode"
+        app:layout_marginTopPercent="4%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="60%"
+        android:src="@drawable/iv_qrcode"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="5%"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:textStyle="bold"
+        android:textColor="@drawable/textcolor_bg"
+        app:layout_textSizePercent="2.5%"
+        android:background="@drawable/btn_bg_common"
+        />
+
+
+    <TextView
+        android:id="@+id/btn_getwicc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:layout_textSizePercent="2.3%"
+        app:layout_marginTopPercent="2.5%"
+        android:textStyle="bold"
+        android:background="@drawable/btn_bg_common_white"
+        android:textColor="@drawable/textcolor_bg_white"
+        />
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

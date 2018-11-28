@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_corner_wallet"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="33%"
+        app:layout_widthPercent="100%"
+        app:layout_paddingLeftPercent="4%"
+        app:layout_paddingRightPercent="4%"
+        app:layout_paddingTopPercent="3%"
+        >
+
+        <TextView
+            android:id="@+id/tv_input_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="27%"
+            app:layout_widthPercent="100%"
+            app:layout_textSizePercent="22%"
+            android:gravity="center|left"
+            android:text="@string/consumption"
+            android:textColor="@color/textcolor_gray"
+            />
+
+            <EditText
+                android:id="@+id/et_input_amount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="71%"
+                app:layout_widthPercent="74%"
+                android:hint="@string/enter_amount"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/textcolor_white"
+                app:layout_textSizePercent="22%"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:layout_below="@id/tv_input_title"
+                />
+
+        <TextView
+            android:id="@+id/tv_amount_select1"
+            android:layout_toRightOf="@id/et_input_amount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="71%"
+            app:layout_widthPercent="18%"
+            android:text="@string/wicc"
+            android:textStyle="italic|bold"
+            android:textColor="@color/textcolor_black"
+            android:gravity="center"
+            android:layout_below="@id/tv_input_title"
+            app:layout_textSizePercent="26%"
+            />
+
+        <!--android:drawableRight="@drawable/iv_down"-->
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="74%"
+        android:layout_gravity="left|center"
+        app:layout_marginLeftPercent="5%"
+        android:background="@android:color/darker_gray"
+        />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="33%"
+        app:layout_widthPercent="100%"
+        app:layout_paddingLeftPercent="4%"
+        app:layout_paddingRightPercent="4%"
+        app:layout_paddingTopPercent="2%"
+        >
+
+        <TextView
+            android:id="@+id/tv_input_title2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="27%"
+            app:layout_widthPercent="74%"
+            app:layout_textSizePercent="22%"
+            android:gravity="center|left"
+            android:text="@string/exchange"
+            android:textColor="@color/textcolor_gray"
+            />
+
+        <ImageView
+            android:id="@+id/iv_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_input_title2"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="30%"
+            android:src="@drawable/change_type"
+            />
+
+        <TextView
+            android:id="@+id/et_input_amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="71%"
+            app:layout_widthPercent="74%"
+            android:text="0"
+            app:layout_textSizePercent="22%"
+            android:singleLine="true"
+            android:gravity="center|left"
+            android:textColor="@color/textcolor_white"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/tv_input_title2"
+            />
+
+        <TextView
+            android:id="@+id/tv_amount_select2"
+            android:layout_toRightOf="@id/et_input_amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="71%"
+            app:layout_widthPercent="18%"
+            android:text="@string/wusd"
+            android:textColor="@color/textcolor_black"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:layout_below="@id/tv_input_title2"
+            app:layout_textSizePercent="25%"
+            />
+
+        <!-- android:drawableRight="@drawable/iv_down"-->
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="33%"
+        app:layout_widthPercent="100%"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_bg_common"
+            app:layout_heightPercent="65%"
+            app:layout_widthPercent="65%"
+            android:text="@string/exchange"
+            app:layout_marginLeftPercent="3%"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:layout_textSizePercent="25%"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="3%"
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="25%"
+            android:gravity="center"
+            app:layout_textSizePercent="20%"
+            android:textColor="@color/textcolor_black"
+            android:text="@string/exchange_records"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="10%"
+        />
+
+    <ImageView
+        android:id="@+id/iv_icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="11%"
+        app:layout_widthPercent="10%"
+        app:layout_marginLeftPercent="38%"
+        app:layout_marginTopPercent="10%"
+        android:layout_toRightOf="@id/iv_icon1"
+        />
+
+    <TextView
+        android:id="@+id/tv_amount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_icon1"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="45%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        android:gravity="center|left"
+        app:layout_textSizePercent="10%"
+        android:textColor="@color/textcolor_white_blue"
+        />
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_icon1"
+        android:layout_toRightOf="@id/tv_amount1"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="5%"
+        app:layout_marginTopPercent="7%"
+        android:src="@drawable/iv_pull_right"
+        />
+
+    <TextView
+        android:id="@+id/tv_amount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_icon1"
+        android:layout_toRightOf="@id/iv_right"
+        android:gravity="center|left"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="40%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginTopPercent="5%"
+        app:layout_textSizePercent="10%"
+        android:textColor="@color/textcolor_white_blue"
+        />
+
+    <TextView
+        android:id="@+id/tv_exchange_number"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@id/tv_amount1"
+        android:gravity="center|left"
+        android:text="@string/exchange_rate"
+        android:textColor="@color/textcolor_little_blue"
+        app:layout_heightPercent="15%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="10%"
+        app:layout_textSizePercent="8%"
+        app:layout_widthPercent="90%" />
+
+    <TextView
+        android:id="@+id/tv_exchange_time"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@id/tv_exchange_number"
+        android:gravity="center|left"
+        android:text="@string/exchange_time"
+        android:textColor="@color/textcolor_little_blue"
+        app:layout_heightPercent="15%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="3%"
+        app:layout_textSizePercent="8%"
+        app:layout_widthPercent="60%" />
+
+    <TextView
+        android:id="@+id/tv_exchange_status"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@id/tv_exchange_number"
+        android:gravity="center|right"
+        android:layout_toRightOf="@id/tv_exchange_time"
+        android:textColor="@color/textcolor_white_blue"
+        app:layout_heightPercent="20%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginTopPercent="3%"
+        app:layout_textSizePercent="7%"
+        app:layout_widthPercent="20%" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_blue"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        android:layout_alignParentBottom="true"
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>

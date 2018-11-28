@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pll_bg"
+    android:background="@drawable/bg_wallet"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="9%"
+        app:layout_widthPercent="100%"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/makesure_words"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="90%"
+        app:layout_textSizePercent="2.5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        android:gravity="center|left"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_words"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="90%"
+        app:layout_textSizePercent="2.2%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        android:gravity="center|left|top"
+        android:textColor="@color/textcolor_white_blue"
+        android:lineSpacingExtra="1dp"
+        />
+
+
+    <TextView
+        android:id="@+id/pll_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        android:gravity="top|left"
+        app:layout_paddingPercent="2%"
+        android:textColorHint="@color/textcolor_little_blue"
+        android:textColor="@color/textcolor_white_blue"
+        android:hint="@string/pls_input_zjc"
+        app:layout_textSizePercent="2.5%"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_black_conner"/>
+
+
+      <com.zhy.android.percent.support.PercentLinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_marginTopPercent="3%"
+          app:layout_heightPercent="40%"
+          app:layout_widthPercent="90%"
+          app:layout_marginLeftPercent="5%"
+          app:layout_marginRightPercent="5%"
+          android:orientation="vertical"
+          >
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/rv_dialog_main2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:overScrollMode="never"
+              android:descendantFocusability="beforeDescendants"
+              android:fastScrollEnabled="false"
+              android:overScrollFooter="@android:color/transparent"
+              android:overScrollHeader="@android:color/transparent"
+              />
+
+      </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="4%"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:textColor="@drawable/textcolor_bg"
+        app:layout_textSizePercent="2.5%"
+        android:background="@drawable/btn_bg_common"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

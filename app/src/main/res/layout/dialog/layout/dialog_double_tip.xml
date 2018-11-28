@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_common_bg"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:id="@+id/scrl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="12%"
+        app:layout_widthPercent="90%"
+        app:layout_heightPercent="48%"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/textcolor_black"
+                android:textSize="17sp"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_below="@id/scrl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:layout_heightPercent="25%"
+        app:layout_marginBottomPercent="2%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="10%"
+        app:layout_textSizePercent="9%"
+        app:layout_widthPercent="43%"
+        android:background="@drawable/btn_gray_common"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/cancel"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@id/scrl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="25%"
+        app:layout_marginBottomPercent="2%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="10%"
+        app:layout_textSizePercent="9%"
+        app:layout_widthPercent="43%"
+        android:background="@drawable/btn_bg_common"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/confirm"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

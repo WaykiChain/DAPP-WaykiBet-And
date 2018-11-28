@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WaykiChain</string>
+    <string name="loading_data">加載數據中...</string>
+    <string name="network_error">網絡錯誤</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="pls_check_net">請檢查網絡</string>
+    <string name="wicc_wkd_record"><u>兌換歷史</u></string>
+    <string name="wicc">WICC</string>
+    <string name="wusd">WUSD</string>
+    <string name="wallet">錢包</string>
+    <string name="home">首頁</string>
+    <string name="jingcai">競猜</string>
+    <string name="mine">我的</string>
+
+    <string name="getwicc">獲取WICC</string>
+    <string name="rate">匯率：</string>
+    <string name="consumption">消耗</string>
+    <string name="enter_amount">請輸入兌換金額</string>
+    <string name="exchange">兌換</string>
+    <string name="exchange_records"><u>兌換記錄</u></string>
+    <string name="balance">餘額</string>
+    <string name="lock_position">鎖倉</string>
+
+    <!--qr code-->
+    <string name="qrcode">掃描二維碼</string>
+    <string name="receivables_code">收款碼</string>
+
+    <!--二维码-->
+    <string name="copy_address">複製地址</string>
+
+    <!--管理钱包-->
+    <string name="management_wallet">管理錢包</string>
+    <string name="backup_wallet">備份錢包</string>
+    <string name="export_private_key">導出私鑰</string>
+    <string name="import_wallet">導入錢包</string>
+    <string name="create_wallet">創建錢包</string>
+    <string name="change_password">修改錢包密碼</string>
+    <string name="warning">&#160;警告</string>
+    <string name="warning_tip">私鑰未加密，洩露風險極大，請保存在安全位置</string>
+    <string name="input_pwd">輸入您的錢包密碼查看助記詞</string>
+    <string name="words_help">助記詞用於恢復錢包或者重置錢包密碼，請將它準確的抄寫在紙上，並存放在只有您知道的安全地方</string>
+    <string name="wallet_pwd">錢包密碼</string>
+    <string name="pls_input_zjc">請輸入您的錢包助記詞，按空格分隔</string>
+    <string name="remarks">備註（選填）</string>
+    <string name="pwd_tip">密碼用於保護私鑰和交易授權碼，非常重要</string>
+    <string name="waykichain_tip">WaykiChain不存儲錢包密碼，也無法幫您找回，請務必牢記！</string>
+    <string name="i_reade">&#160;我已經仔細閱讀並同意</string>
+    <string name="service_private">服務及隱私條款</string>
+    <string name="transfer_amount">轉賬金額</string>
+    <string name="pls_old_pwd">請輸入原密碼</string>
+    <string name="pls_new_pwd">請輸入新密碼</string>
+    <string name="pls_new_pwd2">再次輸入新密碼</string>
+    <string name="input_password">輸入您的錢包密碼查看助記詞</string>
+    <string name="wallet_tip">助記詞用於恢復錢包或者重置錢包密碼，請將它準確的抄寫在紙上，並存放在只有您知道的安全地方</string>
+    <string name="alreday_copy">已備份</string>
+    <string name="wallet_pwd_1">設置您的錢包密碼</string>
+    <string name="wallet_pwd_2">再次輸入您的錢包密碼</string>
+
+    <!--创建钱包-->
+    <string name="pwd_empty">密碼不能為空</string>
+    <string name="pwd_match">兩次密碼不匹配</string>
+    <string name="pwd_length">密碼長度8-16位</string>
+    <string name="create_success">創建成功</string>
+    <string name="create_fail">創建失敗</string>
+    <string name="wallet_creating">錢包創建中</string>
+    <string name="services_agree">請同意服務條款</string>
+    <string name="invalid_mnemonic">無效助記詞</string>
+    <string name="importing">導入中</string>
+    <string name="import_success">導入成功</string>
+    <string name="export_fail">導出失敗</string>
+    <string name="create_tip">創建錢包後將替換您現在的錢包，請確認您的錢包已做好助記詞備份</string>
+    <string name="import_tip">導入錢包後將替換您現在的錢包，請確認您的錢包已做好助記詞備份</string>
+    <string name="old_pwd_error">舊密碼錯誤</string>
+    <string name="pwd_change_success">密碼修改成功</string>
+    <string name="no_wallet_tip">你還未創建或導入錢包，無法進行投注開莊等操作</string>
+
+    <!--兑换-->
+    <string name="exchange_rate">兌換匯率：</string>
+    <string name="exchange_time">兌換時間：</string>
+    <string name="waiting_confirmation">等待確認</string>
+    <string name="exchange_failure">兌換失敗</string>
+    <string name="exchange_success">兌換成功</string>
+    <string name="service_call">客服電話：</string>
+    <string name="you_will_pay">你將支付</string>
+    <string name="recharge">充值</string>
+    <string name="qrcode_input">將二維碼放入框內，即可自動掃描</string>
+
+    <!--转账-->
+    <string name="wicc_transfer">WICC轉賬</string>
+    <string name="my_balance">可用餘額:&#160;</string>
+    <string name="rece_address">收款人錢包地址</string>
+    <string name="fast">快</string>
+    <string name="slow">慢</string>
+    <string name="confitrm_transfer">確認轉賬</string>
+    <string name="pwd_error">密碼錯誤</string>
+
+    <!--交易历史-->
+    <string name="recent_transactions">最近交易記錄</string>
+    <string name="all">全部</string>
+    <string name="transfer">轉賬</string>
+    <string name="activation">激活</string>
+    <string name="receipt">收款</string>
+    <string name="fkf">發款方</string>
+    <string name="skf">收款方</string>
+    <string name="kgfy">礦工費</string>
+    <string name="jyhx">交易哈希</string>
+    <string name="bz">備註</string>
+    <string name="jylx">交易類型</string>
+    <string name="jysj">交易時間</string>
+    <string name="jysb">交易失敗</string>
+    <string name="jycg">交易成功</string>
+
+    <string name="save_faile">保存失敗</string>
+    <string name="save_success">保存成功</string>
+
+    <!--转账-->
+    <string name="address_valid">請輸入有效地址</string>
+    <string name="amount_valid">請輸入有效金額</string>
+    <string name="transfer_success">轉賬成功</string>
+    <string name="open_camer">打開相機失敗，請打開相機權限</string>
+    <string name="amount_not_enough">金額不足</string>
+    <string name="activation_successful">激活中，等待區塊確認</string>
+    <string name="pls_import_create">請導入或者創建錢包</string>
+    <string name="download">下載</string>
+    <string name="found_new_version">發現一個新版本,是否更新?</string>
+    <string name="betted">投注</string>
+    <string name="kaizhuang">開莊</string>
+    <string name="notice_backup">助記詞非常重要，不要丟失或洩露，如果有人獲取您的助記詞，將直接獲取您的資產</string>
+    <string name="start_backup">開始備份</string>
+    <string name="write_words">請抄下錢包助記詞</string>
+    <string name="esp_tip">特別提醒</string>
+    <string name="makesure_words">確認助記詞</string>
+    <string name="click_words">請按順序點擊助記詞，以確認你已備份</string>
+    <string name="backup_words">導出助記詞</string>
+    <string name="backup_success">備份成功</string>
+    <string name="backup_failer">備份失敗</string>
+
+    <!--tip-->
+    <string name="exit_tip">確定退出程序？</string>
+    <string name="invalid_token">您已離線！</string>
+    <string name="import_exit">導入原有錢包</string>
+    <string name="network_error_refresh">網絡錯誤!請點擊空白處刷新 ~</string>
+    <string name="change_rate">修改匯率</string>
+    <string name="system_reward">系統獎勵</string>
+    <string name="jump_over">跳過</string>
+    <string name="no_data">暫無數據</string>
+    <string name="acti_tip">激活錢包需要消耗0.0001WICC,激活錢包後使用錢包內WICC</string>
+    <string name="reward_tip">系統將贈送100WTEST作為新手獎勵，區塊確認中，請60秒後查看。</string>
+    <string name="aleady_copied">已復製到剪切板</string>
+    <string name="easy_kz">便捷的開莊工具，人人可以創建競猜</string>
+    <string name="more_rate">更多的盤口，更多的賠率</string>
+    <string name="data_in_blockchain">全部數據上鍊，公開透明</string>
+    <string name="enter">進入</string>
+    <string name="wait_acti">等待激活</string>
+</resources>

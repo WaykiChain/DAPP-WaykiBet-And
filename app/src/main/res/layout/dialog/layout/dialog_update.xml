@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_common_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|left"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="90%"
+        app:layout_textSizePercent="3%"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_fee"
+        android:layout_below="@id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_textSizePercent="2%"
+        app:layout_heightPercent="3%"
+        app:layout_widthPercent="90%"
+        />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/sb_fee"
+        android:layout_below="@id/tv_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="94%"
+        android:progressTint="@color/textcolor_blue3"
+        android:thumbTint="@color/textcolor_blue3"
+        android:progressBackgroundTint="@android:color/darker_gray"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginLeftPercent="3%"
+        />
+
+    <TextView
+        android:id="@+id/tv_slow"
+        android:layout_below="@id/sb_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="慢"
+        app:layout_heightPercent="3%"
+        app:layout_marginLeftPercent="7%"
+        />
+
+    <TextView
+        android:layout_below="@id/sb_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="7%"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="3%"
+        android:text="快"
+        />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:background="@drawable/et_input"
+        android:layout_below="@id/tv_slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="90%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginLeftPercent="5%"
+        />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_below="@id/et_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="40%"
+        app:layout_marginBottomPercent="2%"
+        app:layout_textSizePercent="2.5%"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="1%"
+        android:text="@string/cancel"
+        android:background="@drawable/btn_gray_common"
+        app:layout_marginLeftPercent="5%"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@id/et_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginRightPercent="5%"
+        android:layout_alignParentRight="true"
+        app:layout_marginTopPercent="1%"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="40%"
+        app:layout_marginBottomPercent="2%"
+        android:background="@drawable/btn_bg_common"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_textSizePercent="2.5%"
+        android:text="@string/confirm"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
