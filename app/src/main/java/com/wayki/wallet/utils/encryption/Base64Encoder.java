@@ -12,7 +12,7 @@ import java.io.UnsupportedEncodingException;
  * Created by Administrator on 2018/5/11.
  */
 public class Base64Encoder extends FilterOutputStream {
-    public static final String base_kE = "6571";
+    public static final String base_kE = "23432423";
 
     private static final char[] chars = {'A', 'B', 'C', 'D', 'E', 'F', 'G',
             'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',

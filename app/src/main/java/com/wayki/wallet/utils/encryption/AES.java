@@ -43,18 +43,18 @@ public class AES {
     private SecretKeyFactory keyfactory = null;
     private SecretKey sk = null;
     private SecretKeySpec skforAES = null;
-    private static final String base_kD = "123456789012";
-    private static String base_kE_ = "1873";// key必须为16位，可更改为自己的key
-    private static String base_kD_ = "9513";
-    public static final String base_kE = "852346791537";
+    private static final String base_kD = "2qe124324dswe12313";
+    private static String base_kE_ = "124324";// key必须为16位，可更改为自己的key
+    private static String base_kD_ = "4234324";
+    public static final String base_kE = "234325435";
     private static String ivParameter = base_kD + base_kD_;// 密钥默认偏移，可更改
     private byte[] iv = ivParameter.getBytes();
     private IvParameterSpec IV;
 
-    public static String base_kA = "7561DE";
+    public static String base_kA = "124234sd";
     public static String base = base_kA + Base64Decoder.base_kD + Base64Encoder.base_kE;//
     // key必须为16位，可更改为自己的key
-    private static String sKey_ = "85234679RBDFdP2a"/*MD5Util.getMD5Str(base)*/;//
+    private static String sKey_ = "1234567890987654"/*MD5Util.getMD5Str(base)*/;//
     // key必须为16位，可更改为自己的key
     private static String sKey = base_kE + base_kE_;// key必须为16位，可更改为自己的key
 

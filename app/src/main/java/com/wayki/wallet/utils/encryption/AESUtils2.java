@@ -24,7 +24,7 @@ public class AESUtils2 {
     // PKCS5Padding是填充模式
     private static final String AES = "AES";//AES 加密
     private static final String SHA1PRNG = "SHA1PRNG";// SHA1PRNG 强随机种子算法, 要区别4.2以上版本的调用方法
-    private static final String key = "8523467900AFESCF";
+    private static final String key = "2344234sdfdffw";
 
     /**
      * &#x751f;&#x6210;&#x968f;&#x673a;&#x6570;&#xff0c;&#x53ef;&#x4ee5;&#x5f53;&#x505a;&#x52a8;

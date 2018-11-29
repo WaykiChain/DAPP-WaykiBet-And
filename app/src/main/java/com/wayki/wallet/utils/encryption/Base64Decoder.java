@@ -14,7 +14,7 @@ import java.io.UnsupportedEncodingException;
  */
 public class Base64Decoder extends FilterInputStream {
 
-    public static final String base_kD = "85234A";
+    public static final String base_kD = "8242345234A";
 
     private static final char[] chars = { 'A', 'B', 'C', 'D', 'E', 'F', 'G',
             'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
